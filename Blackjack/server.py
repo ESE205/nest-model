@@ -17,10 +17,10 @@ config = json.loads(open('config.json').read())
 
 # establish mysql connection
 db = mysql.connector.connect(
-    host=config['mysqlHost'],
-    user=config['mysqlUser'],
-    passwd=config['mysqlPassword'],
-    database=config['mysqlDatabase']
+    host=config['mysqldatabaseinstance'],
+    user=config['amandahua'],
+    passwd=config['AWepg0s3%'],
+    database=config['Blackjack']
 )
 
 print('Connection established')
