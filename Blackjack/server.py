@@ -17,10 +17,10 @@ config = json.loads(open('config.json').read())
 
 # establish mysql connection
 db = mysql.connector.connect(
-    host=config['mysqldatabaseinstance'],
-    user=config['amandahua'],
-    passwd=config['AWepg0s3%'],
-    database=config['Blackjack']
+    host=config['mysqlHost'],
+    user=config['mysqlUser'],
+    passwd=config['mysqlPassword'],
+    database=config['mysqlDatabase']
 )
 
 print('Connection established')
@@ -182,7 +182,4 @@ def getPileData(deckId, hand):
     return data['piles'][hand]
 
 # run the bottle API server
-run(host='localhost', port=config['PORT'])
-That's our API built! Now all that's left is the code to start our server.
-
 run(host='localhost', port=config['PORT'])
