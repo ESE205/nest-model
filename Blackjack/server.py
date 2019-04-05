@@ -114,7 +114,6 @@ def getOrCreate(gameName):
             "playerPile": playerPileData,
             "scores": {}
         }
-
 # respond to request to draw a card
 @route('/game/<deckId>/draw/<player>')
 def draw(deckId, player):
@@ -181,5 +180,5 @@ def getPileData(deckId, hand):
     data = res.json()
     return data['piles'][hand]
 
-# run the bottle API server
+    # run the bottle API server
 run(host='localhost', port=config['PORT'])

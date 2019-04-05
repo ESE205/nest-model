@@ -1,8 +1,8 @@
 {
     "PORT": 4000,
     "apiEndpoint": "https://deckofcardsapi.com/api/deck",
-    "mysqlHost": "mysqldatabaseinstance",
+    "mysqlHost": "mysqldatabaseinstance.cftsklskwbt0.us-west-2.rds.amazonaws.com",
     "mysqlUser": "amandahua",
-    "mysqlPassword": "AWepg0s3%",
-    "mysqlDatabase": "Blackjack"
+    "mysqlPassword": "AWepga0s3%",
+    "mysqlDatabase": "Blackjack" 
 }
