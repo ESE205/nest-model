@@ -1,6 +1,7 @@
 <?php
     include(__DIR__."/include/include_all.php");
     head("Nest Model Outlet");
+    $lumin = 0;
 	echo"
 		<div>
 			<h2>OUTLET HOME</h2>
@@ -10,10 +11,21 @@
 			//	<input type=\"button\" id=\"green_off\" value=\"OFF\">
 			//</p>
 	echo"
-		Outlet: <p>
-				<input type=\"button\" id=\"red_on\" value=\"ON\">
-				<input type=\"button\" id=\"red_off\" value=\"OFF\">
+		Outlet1: <p>
+				<input type=\"button\" id=\"outlet1_on\" value=\"ON\">
+				<input type=\"button\" id=\"outlet1_off\" value=\"OFF\">
 			</p>
+		Outlet2: <p>
+				<input type=\"button\" id=\"outlet2_on\" value=\"ON\">
+				<input type=\"button\" id=\"outlet2_off\" value=\"OFF\">
+			</p>
+		Outlet1 status:
+		<div id=\"outlet1-status\">
+			DEFAULT
+		</div>
+		Outlet2 status:
+		<div id=\"outlet2-status\">
+			DEFAULT
 		</div>
 		<hr> Websocket status: <br>
 		<div id=\"ws-status\">
